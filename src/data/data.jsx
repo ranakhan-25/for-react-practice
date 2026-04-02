@@ -1,0 +1,29 @@
+const programmingLanguages = [
+  {
+    id: 1,
+    title: "JavaScript",
+    description: "JavaScript is one of the most widely used programming languages in the world, primarily known for its role in web development. It allows developers to create interactive, dynamic, and responsive user interfaces directly in the browser. Beyond the front-end, JavaScript powers server-side applications through environments like Node.js, enabling full-stack development with a single language. Its ecosystem is vast, with frameworks such as React, Angular, and Vue simplifying UI creation, while libraries like jQuery historically made DOM manipulation easier. JavaScript also supports asynchronous programming with promises and async/await, making it suitable for handling APIs and real-time data. With ES6 and later versions, the language has evolved to include modern features like arrow functions, classes, modules, and template literals. Its versatility extends to mobile app development, desktop applications, and even IoT devices. Despite quirks in its design, JavaScript remains indispensable due to its ubiquity, flexibility, and continuous evolution."
+  },
+  {
+    id: 2,
+    title: "Python",
+    description: "Python is a high-level, interpreted programming language celebrated for its readability and simplicity. Its syntax is designed to be close to human language, making it one of the most beginner-friendly languages available. Python is versatile, powering applications in web development, data science, machine learning, artificial intelligence, automation, and scientific computing. Frameworks like Django and Flask make web development efficient, while libraries such as NumPy, Pandas, and Matplotlib dominate the data analysis space. TensorFlow and PyTorch have positioned Python as the go-to language for AI and deep learning. Its extensive standard library and active community contribute to rapid development and problem-solving. Python emphasizes code clarity, reducing development time and maintenance costs. It is cross-platform, open-source, and integrates well with other languages and tools. From scripting small tasks to building enterprise-level applications, Python’s adaptability and ecosystem make it a cornerstone of modern programming."
+  },
+  {
+    id: 3,
+    title: "Java",
+    description: "Java is a robust, object-oriented programming language designed with portability and reliability in mind. Its motto, 'write once, run anywhere,' reflects its ability to run on any device with a Java Virtual Machine (JVM). Java is widely used in enterprise applications, backend systems, Android app development, and large-scale distributed systems. Its strong typing and emphasis on object-oriented principles make it suitable for building maintainable and scalable software. Frameworks like Spring and Hibernate streamline enterprise development, while Android Studio relies heavily on Java for mobile applications. Java’s concurrency model supports multithreaded programming, making it effective for performance-critical applications. Its ecosystem includes powerful tools, libraries, and IDEs like IntelliJ IDEA and Eclipse. Security features, garbage collection, and memory management contribute to its reliability. Despite newer languages emerging, Java remains a staple in industries requiring stability, scalability, and long-term support, ensuring its relevance in modern software engineering."
+  },
+  {
+    id: 4,
+    title: "C++",
+    description: "C++ is a powerful, general-purpose programming language that extends the capabilities of C by introducing object-oriented features. It is known for its performance, efficiency, and fine-grained control over system resources. C++ is widely used in game development, operating systems, embedded systems, and applications requiring high performance. Its ability to manage memory directly through pointers and manual allocation makes it suitable for resource-constrained environments. C++ supports multiple programming paradigms, including procedural, object-oriented, and generic programming, offering flexibility to developers. Libraries like STL (Standard Template Library) provide data structures and algorithms, while frameworks such as Unreal Engine rely on C++ for game development. Its complexity can be challenging, but it rewards developers with unmatched speed and control. C++ remains critical in industries where performance and reliability are paramount, bridging the gap between low-level hardware interaction and high-level application logic."
+  },
+  {
+    id: 5,
+    title: "Go",
+    description: "Go, also known as Golang, is a modern programming language developed by Google, designed for simplicity, efficiency, and scalability. It emphasizes concurrency, making it ideal for building distributed systems, cloud-native applications, and microservices. Go’s syntax is clean and minimal, reducing complexity while maintaining expressive power. Its concurrency model, based on goroutines and channels, allows developers to handle thousands of tasks simultaneously with ease. Go compiles to machine code, offering fast execution and efficient memory usage. It includes a powerful standard library, covering networking, cryptography, and web development. Go’s tooling, such as built-in formatting and testing, promotes best practices and productivity. Popular frameworks and platforms like Kubernetes and Docker are written in Go, showcasing its strength in modern infrastructure. Its growing community and adoption in DevOps, backend services, and cloud computing highlight Go’s role as a language built for the future of scalable, reliable software."
+  }
+];
+
+export default programmingLanguages;
