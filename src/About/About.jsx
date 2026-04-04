@@ -8,10 +8,10 @@ const About = () => {
       <nav className=''>
         <ul className='flex justify-center gap-5 items-center w-full '>
           <li>
-            <Link to="text1">text1</Link>
+            <Link to="users">users</Link>
           </li>
           <li>
-            <Link to="text2">text2</Link>
+            <Link to="users2">users2</Link>
           </li>
         </ul>
       </nav>

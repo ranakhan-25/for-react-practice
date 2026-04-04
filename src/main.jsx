@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -8,22 +8,42 @@ import Blogs from "./Blog/Blogs.jsx";
 import About from "./About/About.jsx";
 import Text1 from "./component/Text1.jsx";
 import Text2 from "./component/Text2.jsx";
+import SingleUser from "./component/SingleUser.jsx";
 // import App from './App.jsx'
 
+const users2 = fetch("https://jsonplaceholder.typicode.com/users").then((res) =>
+  res.json(),
+);
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
     children: [
       { path: "/blog", element: <Blogs /> },
-      {path: "/contract", element: <Contract />},
+      { path: "/contract", element: <Contract /> },
       {
         path: "about",
         element: <About />,
         children: [
-          {path:"text1", element: <Text1/>},
-          {path:"text2", element: <Text2/>}
-        ]
+          {
+            path: "users",
+            loader: () => fetch("https://jsonplaceholder.typicode.com/users"),
+            element: <Text1 />,
+          },
+          {
+            path: "users2",
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <Text2 users2={users2} />
+              </Suspense>
+            ),
+          },
+          {
+            path: "users2/:userId",
+            loader: ({params}) =>fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`) ,
+            Component:SingleUser
+          },
+        ],
       },
     ],
   },
